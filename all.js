@@ -1,8 +1,3 @@
-//第一個參數:控制的對象
-//第二個參數:動畫持續時間
-//第三個參數:動畫原始狀態
-//第四個參數:動畫結束狀態
-//第五個參數:動畫從幾秒的關鍵影格開始
 const tl = gsap.timeline();
 tl.fromTo(
   ".animation-img",
@@ -30,11 +25,6 @@ let animation = document.querySelector(".animation");
 setTimeout(() => {
   animation.style.pointerEvents = "none";
 }, 3000);
-
-//查找Enter键的key值
-// window.addEventListener("keypress", (e) => {
-//   console.log(e);
-// });
 
 //防止form按下Enter键會提交表單
 document.querySelectorAll("form").forEach((form) => {
@@ -393,31 +383,3 @@ function handleSorting(direction) {
     });
   });
 }
-
-// 第2種寫法
-// 升序小到大
-// if (direction === "ascending") {
-//   for (let i = 0; i < objectArr.length; i++) {
-//     for (let j = 0; j < objectArr.length - 1 - i; j++) {
-//       let value1 = convertGrad(objectArr[j].classGrade);
-//       let value2 = convertGrad(objectArr[j + 1].classGrade);
-//       if (value1 === "") {
-//         [objectArr[j], objectArr[j + 1]] = [objectArr[j + 1], objectArr[j]];
-//       } else if (value2 !== "" && value1 > value2) {
-//         [objectArr[j], objectArr[j + 1]] = [objectArr[j + 1], objectArr[j]];
-//       }
-//     }
-//   }
-// }
-//降序大到小
-// for (let i = 0; i < objectArr.length; i++) {
-//   for (let j = 0; j < objectArr.length - 1 - i; j++) {
-//     let value1 = convertGrad(objectArr[j].classGrade);
-//     let value2 = convertGrad(objectArr[j + 1].classGrade);
-//     if (value1 === "") {
-//       [objectArr[j], objectArr[j + 1]] = [objectArr[j + 1], objectArr[j]];
-//     } else if (value2 !== "" && value1 < value2) {
-//       [objectArr[j], objectArr[j + 1]] = [objectArr[j + 1], objectArr[j]];
-//     }
-//   }
-// }
