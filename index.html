@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.css" />
+    <title>成績計算網站</title>
+  </head>
+  <body>
+    <section class="animation bg-light h-100 w-100 z-1">
+      <div class="animation-wrap">
+        <div class="animation-img">
+          <img src="./img/math.jpg" alt="math" />
+        </div>
+
+        <div class="animation-slider"></div>
+      </div>
+    </section>
+    <header>
+      <nav>
+        <ul class="d-f jcc py-2">
+          <li><a class="fs-2 px-3" href="#">Home</a></li>
+          <li><a class="fs-2 px-3" href="#">Grade Analysis</a></li>
+          <li><a class="fs-2 px-3" href="#">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container text-center">
+        <h1 class="fs-3">Grades Input Form</h1>
+        <div class="mb-2">
+          <button
+            class="mr-1 fw-bold fs-2 btn-sort border-light border-radius-2 px-1 py-0 text-primary btn-hover btn-active"
+          >
+            <span class="material-icons d-b"> expand_more </span>
+          </button>
+          <button
+            class="fw-bold fs-2 btn-sort border-light border-radius-2 px-1 py-0 text-primary btn-hover btn-active"
+          >
+            <span class="material-icons d-b"> expand_less </span>
+          </button>
+        </div>
+        <div class="js-forms">
+          <form class="mb-2 d-f jcc gap-0 aic">
+            <input
+              class="p-0 w-20"
+              type="text"
+              placeholder="class category"
+              list="opt"
+            />
+            <input class="p-0 w-20" type="text" placeholder="class number" />
+            <input
+              class="p-0 w-10 class-credit"
+              type="number"
+              placeholder="credits"
+              min="0"
+              max="6"
+            />
+            <select class="radius select-grade" name="select">
+              <option value=""></option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+              <option value="F">F</option>
+            </select>
+            <button class="bg-none text-light border-none" type="button">
+              <i class="fas fa-trash fs-2"></i>
+            </button>
+          </form>
+          <form class="mb-2 d-f jcc gap-0 aic">
+            <input
+              class="p-0 w-20"
+              type="text"
+              placeholder="class category"
+              list="opt"
+            />
+            <input class="p-0 w-20" type="text" placeholder="class number" />
+            <input
+              class="p-0 w-10 class-credit"
+              type="number"
+              placeholder="credits"
+              min="0"
+              max="6"
+            />
+            <select class="radius select-grade" name="select">
+              <option value=""></option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+              <option value="F">F</option>
+            </select>
+            <button class="bg-none text-light border-none" type="button">
+              <i class="fas fa-trash fs-2"></i>
+            </button>
+          </form>
+          <form class="mb-2 d-f jcc gap-0 aic">
+            <input
+              class="p-0 w-20"
+              type="text"
+              placeholder="class category"
+              list="opt"
+            />
+            <input class="p-0 w-20" type="text" placeholder="class number" />
+            <input
+              class="p-0 w-10 class-credit"
+              type="number"
+              placeholder="credits"
+              min="0"
+              max="6"
+            />
+            <select class="radius select-grade" name="select">
+              <option value=""></option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+              <option value="F">F</option>
+            </select>
+            <button class="bg-none text-light border-none" type="button">
+              <i class="fas fa-trash fs-2"></i>
+            </button>
+          </form>
+        </div>
+        <button class="bg-none border-none mb-4 js-plus" type="button">
+          <i class="fas fa-plus-square fs-3 text-light"></i>
+        </button>
+        <div class="d-f jcc">
+          <div class="radius w-20 borderChange">
+            <p class="fs-2">Your semester<br />GPA is：</p>
+            <p class="fs-3" id="gpa-result">0.00</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <datalist id="opt">
+      <option value="ACCT">Accounting</option>
+      <option value="ASL">American Sign Language</option>
+      <option value="ANTH">Anthropology</option>
+      <option value="ART">Art</option>
+      <option value="BIOL">Biological Science</option>
+      <option value="BUSM">Business Mgt</option>
+      <option value="CRDEV">Career Development</option>
+      <option value="CHEM">Chemistry</option>
+      <option value="CHIN">Chinese</option>
+      <option value="COMM">Communication Studies</option>
+      <option value="CIS">Computer & Information Sciences</option>
+      <option value="CS">Computer Science</option>
+      <option value="CRMJ">Criminal Justice</option>
+      <option value="ECON">Economics</option>
+      <option value="EDU">Education</option>
+      <option value="ELED">Elementary Education</option>
+      <option value="EMGT">Emergency Management</option>
+      <option value="ENGL">English</option>
+      <option value="EIL">English as Int'l Language</option>
+      <option value="ENTR">Entrepreneurship</option>
+      <option value="EXS">Exercise Sport Science</option>
+      <option value="FILM">Film</option>
+      <option value="FIN">Finance</option>
+      <option value="FORS">Forensic Science</option>
+      <option value="FREN">French</option>
+      <option value="GEOG">Geography</option>
+      <option value="HAWN">Hawaiian</option>
+      <option value="HWST">Hawaiian Studies</option>
+      <option value="HLTH">Health</option>
+      <option value="HIST">History</option>
+      <option value="HEC">Home Economics</option>
+      <option value="HTM">Hospitality Tourism Mgt</option>
+      <option value="HUM">Humanities</option>
+      <option value="IS">Information System</option>
+      <option value="IT">Information Technology</option>
+      <option value="ICS">International Cultural Studies</option>
+      <option value="IPB">Intercultural Peacebuilding</option>
+      <option value="JPN">Japanese</option>
+      <option value="LING">Linguistics</option>
+      <option value="AMOR">Maori</option>
+      <option value="MATH">Mathematics</option>
+      <option value="MUSC">Music</option>
+      <option value="OCEN">Oceanography</option>
+      <option value="PAIS">Pacific Island Studies</option>
+      <option value="PHSC">Physical Science</option>
+      <option value="POSC">Political Science</option>
+      <option value="PSYC">Psychology</option>
+      <option value="PMGT">Public Management</option>
+      <option value="REL">Religion</option>
+      <option value="SCI">Science</option>
+      <option value="SAMN">Samoan</option>
+      <option value="SCED">Secondary Education</option>
+      <option value="SOCW">Social Work</option>
+      <option value="SPAN">Spanish</option>
+      <option value="SPED">Special Education</option>
+      <option value="STDEV">Student Development</option>
+      <option value="TESOL">TESOL</option>
+      <option value="THEA">Theatre</option>
+      <option value="TONG">Tongan</option>
+      <option value="WLNG">World Language</option>
+    </datalist>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./all.js"></script>
+  </body>
+</html>

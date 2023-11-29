@@ -1,0 +1,226 @@
+body {
+  font-family: "Baloo 2", sans-serif;
+  background: rgb(27, 27, 56);
+  padding: 0;
+  margin: 0;
+}
+
+body,
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1296px;
+}
+
+.d-f {
+  display: flex;
+}
+.d-b {
+  display: block;
+}
+
+.aic {
+  align-items: center;
+}
+
+.fxdc {
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.fs-2 {
+  font-size: 1.5rem;
+}
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+.px-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.py-0 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.p-0 {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.gap-0 {
+  gap: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-light {
+  color: white;
+}
+.text-primary {
+  color: rgb(27, 27, 56);
+}
+
+.w-20 {
+  width: 20%;
+}
+.w-10 {
+  width: 10%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-80 {
+  height: 80vh;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+.h-100 {
+  height: 100vh;
+}
+
+.z-1 {
+  position: fixed;
+  z-index: 1;
+}
+
+.radius {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.bg-none {
+  background: transparent;
+}
+.bg-light {
+  background: white;
+}
+
+.border-none {
+  border: none;
+}
+.border-light {
+  border: 2px solid rgb(143, 143, 255);
+}
+.border-radius-2 {
+  border-radius: 2rem;
+}
+
+.btn-hover:hover {
+  background: rgb(255, 242, 142);
+}
+.btn-active:active {
+  background: rgb(255, 232, 57);
+}
+
+@keyframes borderChange {
+  0% {
+    border: 4px solid red;
+  }
+  50% {
+    border: 4px solid greenyellow;
+  }
+  75% {
+    border: 4px solid blue;
+  }
+  100% {
+    border: 4px solid red;
+  }
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.borderChange {
+  animation: borderChange 3s infinite;
+}
+
+.animation-wrap {
+  width: 100%;
+  height: 80vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.animation-img {
+  height: 0;
+  width: 80%;
+}
+.animation-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.animation-slider {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgb(221, 244, 244), rgb(24, 124, 124));
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.at-scaleUp {
+  animation: scaleUp 0.2s ease-in-out;
+}
+.at-scaleDown {
+  animation: scaleDown 0.2s ease-in-out;
+}/*# sourceMappingURL=all.css.map */
